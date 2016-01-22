@@ -1,0 +1,40 @@
+{
+  "name": "80766-sedona",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Обучающий проект «sedona» от HTML Academy",
+  "author": "Алексей Радзимовский",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up-htmlacademy/80766-sedona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/up-htmlacademy/80766-sedona/issues"
+  },
+  "homepage": "https://github.com/up-htmlacademy/80766-sedona",
+  "dependencies": {
+    "autoprefixer": "6.1.x",
+    "grunt": "0.4.x",
+    "grunt-contrib-clean": "0.6.x",
+    "grunt-contrib-copy": "0.8.x",
+    "grunt-contrib-less": "1.1.x",
+    "grunt-contrib-watch": "0.6.x",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-lintspaces": "0.7.x",
+    "grunt-postcss": "0.7.x",
+    "load-grunt-tasks": "3.3.x",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-csscomb": "^3.1.0"
+  },
+  "scripts": {
+    "pregosha": "npm install > /dev/null",
+    "gosha": "grunt gosha",
+    "test": "grunt lintspaces:codestyle",
+    "start": "grunt watch"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
