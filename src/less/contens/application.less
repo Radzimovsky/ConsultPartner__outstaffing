@@ -1,10 +1,20 @@
 .application {
+  position: relative;
+  width: 100%;
   padding-top: 60px;
+  padding-bottom: 72px;
   background-color: #309dc1;
+  font-size: 0;
+  text-align: center;
+    &__envelope {
+      position: absolute;
+      top: -28px;
+      left: 8%;
+    }
     &__tagline {
       margin: 0 auto;
       padding: 0;
-      width: 180px;
+      width: 56.25%;
       font-size: 36px;
       line-height: 42px;
       color: #ffffff;
@@ -14,9 +24,50 @@
       text-transform: uppercase;
         &--mini {
           margin-top: 25px;
+          margin-bottom: 36px;
           font-size: 22px;
           line-height: 22px;
           text-transform: none;
+        }
+    }
+    &__input-text {
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      padding: 0 21px;
+      width: 84.375%;
+      height: 40px;
+      font-size: 18px;
+      line-height: 18px;
+      color: #636363;
+      font-weight: normal;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      background-color: #ffffff;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+        &:nth-of-type(2)  {
+          margin-bottom: 33px;
+        }
+    }
+    &__sumbut {
+      margin-bottom: 14px;
+      width: 73.125%;
+      height: 42px;
+      font-size: 22px;
+      line-height: 22px;
+      color: #309dc1;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+        &:nth-of-type(4)  {
+          margin-bottom: 0;
         }
     }
 }

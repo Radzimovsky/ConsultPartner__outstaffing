@@ -58,19 +58,19 @@
           <p class="clients__tagline">Нам доверяют:</p>
           <div class="clients__blocks-img">
             <div class="clients__block-img">
-              <img class="clients__img clients__img--1" src="" alt="компания 1">
+              <img class="clients__img clients__img--1" src="./img/inei.jpg" width="" height="" alt="компания 1">
             </div>
             <div class="clients__block-img">
-              <img class="clients__img clients__img--2" src="" alt="компания 2">
+              <img class="clients__img clients__img--2" src="./img/jeldor.png" width="" height="" alt="компания 2">
             </div>
             <div class="clients__block-img">
-              <img class="clients__img clients__img--3" src="" alt="компания 3">
+              <img class="clients__img clients__img--3" src="./img/kub-stroi.jpg" width="" height="" alt="компания 3">
             </div>
             <div class="clients__block-img">
-              <img class="clients__img clients__img--4" src="" alt="компания 4">
+              <img class="clients__img clients__img--4" src="./img/netto.jpg" width="" height="" alt="компания 4">
             </div>
             <div class="clients__block-img">
-              <img class="clients__img clients__img--5" src="" alt="компания 5">
+              <img class="clients__img clients__img--5" src="./img/pec.jpg" width="" height="" alt="компания 5">
             </div>
           </div>
         </div>
@@ -86,16 +86,20 @@
           </div>
         </div>
         <form class="application" action="">
+          <img class="application__envelope" src="./img/the-envelope.png" width="88" height="57" alt="envelope">
           <p class="application__tagline">Оставить заявку</p>
           <p class="application__tagline application__tagline--mini">на бесплатный подбор резюме</p>
-          <input class="application__input-name" type="text" name="name" value="Ваше имя">
-          <input class="application__input-phone" type="text" name="phone" value="Ваш телефонный номер">
-          <input class="application__sumbut" type="sumbut" name="name" value="">
-          <input class="application__request-a-call" type="sumbut" name="name" value="">
+          <input class="application__input-text application__input-text--name" type="text" name="name" placeholder="Ваше имя"><br>
+          <input class="application__input-text application__input-text--phone" type="text" name="phone" placeholder="Ваш телефонный номер"><br>
+          <input class="application__sumbut" type="submit" name="call-me" value="отправить заявку"><br>
+          <input class="application__sumbut" type="submit" name="call-me" value="заказать звонок">
         </form>
       </section>
       <section class="problems">
-        <img class="problems__img" src="" alt="">
+        <div class="problems__text-block">
+          <p class="problems__tagline">ТОП 5 ПРОБЛЕМ</p>
+          <p class="problems__text">с которыми сталкиваются работодатели</p>
+        </div>
         <ul class="problems__list">
           <li class="problems__item">Неквалифицированный подбор персонала</li>
           <li class="problems__item">Отсутствие гарантий на персонал</li>
@@ -106,29 +110,35 @@
       </section>
       <section class="advantages">
         <h2 class="advantages__tagline">В чем наши преимущества</h2>
-        <div class="advantages__block-text">
-          <div>
-            <h3 class="advantages__text--big">Наш опыт подбора персонала более 10 лет.</h3>
+        <div class="advantages__blocks-text">
+          <div class="advantages__block-text">
+            <img class="advantages__img" src="./img/advantages__img--1.png" width="43" height="43" alt="опыт">
+            <h3 class="advantages__text">Наш опыт подбора персонала более 10 лет.</h3>
             <p class="advantages__text--small">Наше рекрутинговое агентство работает в Санкт-Петербурге и области. Мы имеем сотни успешных проектов, отзывов и благодарностей клиентов.</p>
           </div>
-          <div>
-            <h3 class="advantages__text--big">Профессионализм и специализация экспертов</h3>
+          <div class="advantages__block-text">
+            <img class="advantages__img" src="./img/advantages__img--2.png" width="45" height="38" alt="эксперты">
+            <h3 class="advantages__text">Профессионализм и специализация экспертов</h3>
             <p class="advantages__text--small">Персонал подбирают рекрутёры уже работавшие по вашему направлению. 5 лет - средний опыт подбора персонала наших специалистов.</p>
           </div>
-          <div>
-            <h3 class="advantages__text--big">Мы даём гарантию на подобранный персонал до 2-х ле</h3>
+          <div class="advantages__block-text">
+            <img class="advantages__img" src="./img/advantages__img--3.png" width="36" height="36" alt="гарантия">
+            <h3 class="advantages__text">Мы даём гарантию на подобранный персонал до 2-х ле</h3>
             <p class="advantages__text--small">Осуществляем замену сотрудника в случае не прохождения им испытательного срока. Гарантийные обязательства прописываются в договоре.</p>
           </div>
-          <div>
-            <h3 class="advantages__text--big">Скорость подбора персонала</h3>
+          <div class="advantages__block-text">
+            <img class="advantages__img" src="./img/advantages__img--4.png" width="41" height="41" alt="скорость">
+            <h3 class="advantages__text">Скорость подбора персонала</h3>
             <p class="advantages__text--small">За счёт отлаженной системы рекрутинга, собственной базы кандидатов из Санкт-Петербурга и доступам ко всевозможным, даже закрытым источникам кандидатов – предлагаем высокую эффективность и динамику поиска лучших кадровых агентств.</p>
           </div>
-          <div>
-            <h3 class="advantages__text--big">Максимальный охват рынка труда</h3>
+          <div class="advantages__block-text">
+            <img class="advantages__img" src="./img/advantages__img--5.png" width="40" height="47" alt="охват">
+            <h3 class="advantages__text">Максимальный охват рынка труда</h3>
             <p class="advantages__text--small">Мы ищем везде, а не на двух сайтах. Активно используем базу из 170000 кандидатов Северной столицы и используем от 7 до 16 источников поиска. Немногие кадровые агентства СПб могут похвастать такой базой.</p>
           </div>
-          <div>
-            <h3 class="advantages__text--big">Достоверная проверка рекомендации</h3>
+          <div class="advantages__block-text">
+            <img class="advantages__img" src="./img/advantages__img--6.png" width="43" height="40" alt="проверка">
+            <h3 class="advantages__text">Достоверная проверка рекомендации</h3>
             <p class="advantages__text--small">Мы берем рекомендации только у непосредственных руководителей кандидата. Настойчиво расспрашиваем об эффективности, результативности и личных качествах сотрудника.</p>
           </div>
         </div>
@@ -136,23 +146,23 @@
       <section class="guarantees">
         <h2 class="guarantees__tagline">ТОЛЬКО НАША КОМПАНИЯ ПРЕДОСТАВЛЯЕТ ТРОЙНУЮ ГАРАНТИЮ ДЛЯ РАБОТОДАТЕЛЯ</h2>
         <div class="guarantees__block">
-          <img class="guarantees__img" src="" alt="">
+          <img class="guarantees__img" src="./img/guarantees__img--1.png" width="283" height="154" alt="возврат денег">
           <p class="guarantees__text">Возвращаем деньги, если подобранный нами сотрудник работает неэффективно (замер KPI).</p>
         </div>
         <div class="guarantees__block">
-          <img class="guarantees__img" src="" alt="">
+          <img class="guarantees__img" src="./img/guarantees__img--2.png" width="283" height="154" alt="сроки">
           <p class="guarantees__text">У нас есть все для того, чтобы подходящий вам специалист стал сотрудником вашей компании в самые короткие сроки*</p>
+          <p class="guarantees__clarification">*точный срок исполнения наших обязательств и гарантированной замены будет прописан в договоре на оказание услуг</p>
         </div>
         <div class="guarantees__block">
-          <img class="guarantees__img" src="" alt="">
+          <img class="guarantees__img" src="./img/guarantees__img--3.png" width="283" height="154" alt="новый спец.">
           <p class="guarantees__text">В случае ухода сотрудника во время испытательного срока мы оперативно подберем для вас нового специалиста бесплатно*</p>
         </div>
-        <p class="guarantees__clarification">*точный срок исполнения наших обязательств и гарантированной замены будет прописан в договоре на оказание услуг</p>
       </section>
       <section class="how-we-are-working">
         <div class="how-we-are-working__text-block">
           <h2 class="how-we-are-working__tagline">Как мы работаем?</h2>
-          <p class="how-we-are-working__text">Справа на рисунке Средние значения поиска персонала в сфере продаж.</p>
+          <p class="how-we-are-working__text how-we-are-working__text--block">Справа на рисунке Средние значения поиска персонала в сфере продаж.</p>
           <p class="how-we-are-working__text">Профессиональный подбор персонала – это огромные временные затраты. </p>
           <p class="how-we-are-working__text">Он включает:</p>
           <ul class="how-we-are-working__list">
@@ -167,9 +177,9 @@
           </ul>
         </div>
         <img class="how-we-are-working__img" src="" alt="">
-        <p class="how-we-are-working__steps-text">CУПЕР-СПЕЦИАЛИСТ<span class="how-we-are-working__steps-text--mini">выбранный вами, выходит на работу</span></p>
-        <p class="how-we-are-working__steps-text">СПЕЦИАЛИСТОВ<span class="how-we-are-working__steps-text--mini">представленных заказчику</span></p>
-        <p class="how-we-are-working__steps-text">КАНДИДАТОВ<span class="how-we-are-working__steps-text--mini">приглашенных на личную встречу</span></p>
+        <p class="how-we-are-working__steps-text">CУПЕР-СПЕЦИАЛИСТ<span class="how-we-are-working__steps-text how-we-are-working__steps-text--mini">выбранный вами, выходит на работу</span></p>
+        <p class="how-we-are-working__steps-text">СПЕЦИАЛИСТОВ<span class="how-we-are-working__steps-text how-we-are-working__steps-text--mini">представленных заказчику</span></p>
+        <p class="how-we-are-working__steps-text">КАНДИДАТОВ<span class="how-we-are-working__steps-text how-we-are-working__steps-text--mini">приглашенных на личную встречу</span></p>
         <p class="how-we-are-working__steps-text">ТЕЛЕФОННЫХ СОБЕСЕДОВАНИЙ</p>
         <p class="how-we-are-working__steps-text">РЕЗЮМЕ</p>
       </section>
@@ -178,18 +188,18 @@
         <p class="about-us__text">Основным направлением работы нашей компании является подбор квалифицированного персонала. Более 13-ти лет работы нашего кадрового агентства в Санкт-Петербурге мы постоянно совершенствуем инструменты поиска и оценки персонала.</p>
         <p class="about-us__text">Наше агентство по подбору персонала в СПб отличает ориентация на подбор результативных и эффективных сотрудников. Именно на эти качества в большей степени делается упор при оценке кандидата.</p>
         <p class="about-us__text">Особое внимание уделяется сбору рекомендаций на кандидата от его непосредственных руководителей и получению достоверной информации о его реальном опыте.</p>
-        <p class="about-us__text">Мы уверены в своём профессионализме и поэтому первыми среди рекрутинговых агентств СПб даём <span class="about-us__text--bold">ТРОЙНУЮ ГАРАНТИЮ</span> на подобранный персонал:</p>
+        <p class="about-us__text">Мы уверены в своём профессионализме и поэтому первыми среди рекрутинговых агентств СПб даём <span class="about-us__text about-us__text--bold">ТРОЙНУЮ ГАРАНТИЮ</span> на подобранный персонал:</p>
         <ul class="about-us__list">
           <li class="about-us__item">
-            <span class="about-us__item--bold">Гарантия профессионализма и эффективности сотрудника</span>
+            <span class="about-us__item--bold">Гарантия профессионализма и эффективности сотрудника</span><br>
             Возвращаем деньги, если подобранный нами сотрудник работает неэффективно (замер KPI).
           </li>
           <li class="about-us__item">
-            <span class="about-us__item--bold">Гарантия скорости подбора</span>
+            <span class="about-us__item--bold">Гарантия скорости подбора</span><br>
             У нас есть все для того, чтобы подходящий вам специалист стал сотрудником вашей компании в самые короткие сроки – точный срок исполнения наших обязательств будет прописан в договоре на оказание услуг
           </li>
           <li class="about-us__item">
-            <span class="about-us__item--bold">Гарантия замены сотрудника</span>
+            <span class="about-us__item--bold">Гарантия замены сотрудника</span><br>
             В случае ухода сотрудника во время испытательного срока мы оперативно подберем для вас нового специалиста бесплатно – точный срок гарантированной замены будет прописан в договоре на оказание услуг
           </li>
         </ul>
@@ -204,8 +214,26 @@
               <p class="reviews__text">TakeCareStudio – это молодой и активно развивающийся Российский бренд натуральной косметики ручной работы. На протяжении последних 2 лет мы стремительно набираем обороты и это конечно же, требует...</p>
             </div>
             <div class="reviews__block-author">
-              <img class="reviews__img-author" src="" alt="">
-              <blockquote class="reviews__quote-author"><cite class="reviews__name-author">Анхимова А.А.</cite>Генеральный директор ООО «Т-Студио» "TakeCareStudio"</blockquote>
+              <img class="reviews__img-author" src="./img/img-author.png" alt="author">
+              <blockquote class="reviews__quote-author"><cite class="reviews__name-author">Анхимова А.А.</cite><br>Генеральный директор<br>ООО «Т-Студио»<br>"TakeCareStudio"</blockquote>
+            </div>
+          </div>
+          <div class="reviews__block">
+            <div class="reviews__frame">
+              <p class="reviews__text">TakeCareStudio – это молодой и активно развивающийся Российский бренд натуральной косметики ручной работы. На протяжении последних 2 лет мы стремительно набираем обороты и это конечно же, требует...</p>
+            </div>
+            <div class="reviews__block-author">
+              <img class="reviews__img-author" src="./img/img-author.png" alt="author">
+              <blockquote class="reviews__quote-author"><cite class="reviews__name-author">Анхимова А.А.</cite><br>Генеральный директор<br>ООО «Т-Студио»<br>"TakeCareStudio"</blockquote>
+            </div>
+          </div>
+          <div class="reviews__block">
+            <div class="reviews__frame">
+              <p class="reviews__text">TakeCareStudio – это молодой и активно развивающийся Российский бренд натуральной косметики ручной работы. На протяжении последних 2 лет мы стремительно набираем обороты и это конечно же, требует...</p>
+            </div>
+            <div class="reviews__block-author">
+              <img class="reviews__img-author" src="./img/img-author.png" alt="author">
+              <blockquote class="reviews__quote-author"><cite class="reviews__name-author">Анхимова А.А.</cite><br>Генеральный директор<br>ООО «Т-Студио»<br>"TakeCareStudio"</blockquote>
             </div>
           </div>
         </div>
@@ -215,22 +243,27 @@
         <p class="order-easily__text">Порядок работы</p>
         <div class="order-easily__blocks">
           <div class="order-easily__block">
-            <p class="order-easily__text">ЗВОНОК ИЛИ ПИСЬМО ЗАПОЛНЕНИЕ ЗАЯВКИ НА ПОДБОР ПЕРСОНАЛА</p>
+            <p class="order-easily__text-in-block">ЗВОНОК ИЛИ ПИСЬМО<br>ЗАПОЛНЕНИЕ ЗАЯВКИ<br>НА ПОДБОР ПЕРСОНАЛА</p>
+            <img class="order-easily__arrow" src="./img/arrow.png" width="137" height="53" alt="arrow">
           </div>
           <div class="order-easily__block">
-            <p class="order-easily__text">УТОЧНЕНИЕ ПРОФИЛЯ ДОЛЖНОСТИ И ПОДПИСАНИЕ ДОГОВОРА</p>
+            <p class="order-easily__text-in-block">УТОЧНЕНИЕ ПРОФИЛЯ<br>ДОЛЖНОСТИ И<br>ПОДПИСАНИЕ ДОГОВОРА</p>
+            <img class="order-easily__arrow" src="./img/arrow.png" width="137" height="53" alt="arrow">
           </div>
           <div class="order-easily__block">
-            <p class="order-easily__text">ПОИСК, ОТБОР И ОЦЕНКА КАНДИДАТОВ</p>
+            <p class="order-easily__text-in-block">ПОИСК, ОТБОР И<br>ОЦЕНКА КАНДИДАТОВ</p>
+            <img class="order-easily__arrow" src="./img/arrow.png" width="137" height="53" alt="arrow">
           </div>
           <div class="order-easily__block">
-            <p class="order-easily__text">ПРЕДОСТАВЛЕНИЕ 100% ГАРАНТИИ – ЗАМЕНА СПЕЦИАЛИСТА ЕСЛИ ОН НЕ ПРОХОДИТ ИСПЫТАТЕЛЬНЫЙ СРОК</p>
+            <p class="order-easily__text-in-block">ПРЕДОСТАВЛЕНИЕ 100% ГАРАНТИИ –<br>ЗАМЕНА СПЕЦИАЛИСТА ЕСЛИ ОН НЕ<br>ПРОХОДИТ ИСПЫТАТЕЛЬНЫЙ СРОК</p>
+            <img class="order-easily__arrow" src="./img/arrow.png" width="137" height="53" alt="arrow">
           </div>
           <div class="order-easily__block">
-            <p class="order-easily__text">ВЫ ПРОИЗВОДИТЕ ОПЛАТУ УСЛУГИ</p>
+            <p class="order-easily__text-in-block">ВЫ ПРОИЗВОДИТЕ<br>ОПЛАТУ УСЛУГИ</p>
+            <img class="order-easily__arrow" src="./img/arrow.png" width="137" height="53" alt="arrow">
           </div>
           <div class="order-easily__block">
-            <p class="order-easily__text">ПРЕДОСТАВЛЕНИЕ ВАМ ПРОФЕССИОНАЛЬНЫХ КАНДИДАТОВ И ВЫХОД СОТРУДНИКА НА РАБОТУ</p>
+            <p class="order-easily__text-in-block">ПРЕДОСТАВЛЕНИЕ ВАМ<br>ПРОФЕССИОНАЛЬНЫХ КАНДИДАТОВ<br>И ВЫХОД СОТРУДНИКА НА РАБОТУ</p>
           </div>
         </div>
       </section>
@@ -246,64 +279,65 @@
           </ul>
         </div>
         <form class="application" action="">
-          <legend class="application__tagline">Оставить заявку<br><span class="application__tagline--mini">на бесплатный подбор резюме</span></legend>
-          <input class="application__input-name" type="text" name="name" value="Ваше имя">
-          <input class="application__input-phone" type="text" name="phone" value="Ваш телефонный номер">
-          <input class="application__sumbut" type="sumbut" name="name" value="">
-          <input class="application__request-a-call" type="sumbut" name="name" value="">
+          <img class="application__envelope" src="./img/the-envelope.png" width="88" height="57" alt="envelope">
+          <p class="application__tagline">Оставить заявку</p>
+          <p class="application__tagline application__tagline--mini">на бесплатный подбор резюме</p>
+          <input class="application__input-text application__input-text--name" type="text" name="name" placeholder="Ваше имя"><br>
+          <input class="application__input-text application__input-text--phone" type="text" name="phone" placeholder="Ваш телефонный номер"><br>
+          <input class="application__sumbut" type="submit" name="call-me" value="отправить заявку"><br>
+          <input class="application__sumbut" type="submit" name="call-me" value="заказать звонок">
         </form>
       </section>
       <section class="make-a-call">
-        <img class="make-a-call__img" src="" alt="">
         <p class="make-a-call__text">Нужны эффективные сотрудники? Звоните:</p>
         <p class="make-a-call__number"><span class="make-a-call__mini">000</span>000 00 00</p>
-        <a class="make-a-call__button" href="">заказать звонок</a>
+        <a class="make-a-call__button" href="#">заказать звонок</a>
       </section>
     </div>
     <footer class="main-footer">
       <div class="main-footer__blocks">
         <div class="main-footer__block">
           <h3 class="main-footer__heading">Почему мы?</h3>
-          <p class="main-footer__item">» О компании</p>
-          <p class="main-footer__item">» Контакты</p>
-          <p class="main-footer__item">» Наши кейсы</p>
-          <p class="main-footer__item">» Отзывы</p>
-          <p class="main-footer__item">» Преимущества</p>
-          <p class="main-footer__item">ООО «ConsaltPartner»<br>Санкт-Петербург, 2015.<br>© Все права защищены.</p>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» О компании</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Контакты</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Наши кейсы</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Отзывы</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Преимущества</p></a>
         </div>
         <div class="main-footer__block">
           <h3 class="main-footer__heading">Поиск персонала</h3>
-          <p class="main-footer__item">» Подбор персонала</p>
-          <p class="main-footer__item">» HR-консалтинг</p>
-          <p class="main-footer__item">» Скрининг резюме</p>
-          <p class="main-footer__item">» Ресечинг</p>
-          <p class="main-footer__item">» Аутстаффинг персонала</p>
-          <p class="main-footer__item">» Массовый подбор персонала</p>
-          <p class="main-footer__item">» Аутсорсинг персонала</p>
-          <p class="main-footer__item">» Кадровый аутсорсинг</p>
-          <p class="main-footer__item">» Headhunting</p>
-          <p class="main-footer__item">» Поиск резюме</p>
-          <p class="main-footer__item">» Оценка персонала</p>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Подбор персонала</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» HR-консалтинг</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Скрининг резюме</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Ресечинг</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Аутстаффинг персонала</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Массовый подбор персонала</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Аутсорсинг персонала</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Кадровый аутсорсинг</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Headhunting</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Поиск резюме</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Оценка персонала</p></a>
         </div>
         <div class="main-footer__block">
           <h3 class="main-footer__heading">Соискателям</h3>
-          <p class="main-footer__item">» Советы кандидату</p>
-          <p class="main-footer__item">» Поиск работы</p>
-          <p class="main-footer__item">» Правила прохождения интервью</p>
-          <p class="main-footer__item">» Подготовка к собеседованию</p>
-          <p class="main-footer__item">» Как написать резюме</p>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Советы кандидату</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Поиск работы</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Правила прохождения интервью</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Подготовка к собеседованию</p></a><br>
+          <a class="main-footer__link" href="#"><p class="main-footer__item">» Как написать резюме</p></a>
         </div>
-        <div class="language">
-          <a class="language__link" href=""><img class="language__flag--rus" src="" alt=""></a>
-          <a class="language__link" href=""><img class="language__flag--eng" src="" alt=""></a>
-          <a class="language__link" href=""><img class="language__flag--fin" src="" alt=""></a>
-          <a class="language__link" href=""><img class="language__flag--chn" src="" alt=""></a>
+        <div class="language language--main-footer">
+          <a class="language__link" href=""><img class="language__flag--rus" src="./img/language__flag--rus.png" width="27" height="16" alt="rus"></a>
+          <a class="language__link" href=""><img class="language__flag--eng" src="./img/language__flag--eng.png" width="27" height="16" alt="eng"></a>
+          <a class="language__link" href=""><img class="language__flag--fin" src="./img/language__flag--fin.png" width="27" height="16" alt="fin"></a>
+          <a class="language__link" href=""><img class="language__flag--chn" src="./img/language__flag--chn.png" width="27" height="16" alt="chn"></a>
         </div>
       </div>
+      <p class="main-footer__all-rights-soblediny">ООО «ConsaltPartner»<br>Санкт-Петербург, 2015.<br>© Все права защищены.</p>
       <div class="social-network">
-        <a class="social-network__link" href=""><img class="social-network__img--fb" src="" alt=""></a>
-        <a class="social-network__link" href=""><img class="social-network__img--tw" src="" alt=""></a>
-        <a class="social-network__link" href=""><img class="social-network__img--google" src="" alt=""></a>
+        <a class="social-network__link" href="#"><img class="social-network__img--fb" src="" alt=""></a>
+        <a class="social-network__link" href="#"><img class="social-network__img--tw" src="" alt=""></a>
+        <a class="social-network__link" href="#"><img class="social-network__img--google" src="" alt=""></a>
       </div>
     </footer>
   </div>

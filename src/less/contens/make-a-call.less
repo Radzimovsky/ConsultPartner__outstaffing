@@ -1,0 +1,62 @@
+.make-a-call {
+  padding-top: 40px;
+  background-color: #dedbd6;
+    &__text {
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      padding-left: 37px;
+      width: 70%;
+      font-size: 19px;
+      line-height: 25px;
+      color: #686868;
+      font-weight: normal;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+        &::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 37px;
+          height: 37px;
+          background-image: url(../img/make-a-call-img.png);
+
+        }
+    }
+    &__number {
+      font-size: 34px;
+      line-height: 40px;
+      color: #06385f;
+      font-weight: bold;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      text-align: center;
+    }
+    &__mini {
+      position: relative;
+      right: 5px;
+      bottom: 12px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #686868;
+      font-weight: normal;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      text-align: left;
+    }
+    &__button {
+      display: inline-block;
+      vertical-align: top;
+      padding: 12px 0;
+      width: 100%;
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: #309dc1;
+    }
+}

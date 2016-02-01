@@ -1,0 +1,105 @@
+.reviews {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-color: #dedbd6;
+    &__tagline {
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: 95%;
+      font-size: 54px;
+      line-height: 60px;
+      color: #1a5684;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-align: center;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 4px;
+          width: 90%;
+          background-color: #309dc1;
+        }
+    }
+    &__all-reviews {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: #309dc1;
+      font-weight: normal;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-transform: uppercase;
+    }
+    &__blocks {
+      width: 100%;
+    }
+    &__block {
+      width: 100%;
+    }
+    &__frame {
+      position: relative;
+      padding: 16px 11%;
+      box-sizing: border-box;
+      background-color: #f9f9f8;
+      width: 100%;
+      border: 1px solid #cccccb;
+      background-image: url(../img/quotes-2.png), url(../img/quotes.png);
+      background-repeat: no-repeat;
+      background-position: 10% 0%, 90% 100%;
+        &::after {
+          position: absolute;
+          content: '';
+          bottom: -23px;
+          left: 55%;
+          width: 32px;
+          height:  23px;
+          background-image: url(../img/corner.png);
+        }
+    }
+    &__text {
+      margin: 0;
+      font-size: 14px;
+      line-height: 25px;
+      color: #aaaaaa;
+      font-weight: normal;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-align: center;
+    }
+    &__img-author {
+      margin-top: 35px;
+      margin-right: 11%;
+      margin-bottom: 35px;
+      margin-left: 8%;
+    }
+    &__quote-author {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      margin-top: 45px;
+      width: 153px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #5b5b5b;
+      font-weight:normal;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-transform: uppercase;
+    }
+    &__name-author {
+      display: inline-block;
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 26px;
+      color: #303030;
+      font-weight:normal;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-transform: none;
+    }
+}
