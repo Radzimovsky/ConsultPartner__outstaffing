@@ -5,7 +5,6 @@
       padding-top: 55px;
       padding-bottom: 45px;
       width: 100%;
-      background-color: #dedbd6;
     }
     &__tagline {
       position: relative;
@@ -79,4 +78,22 @@
     &__steps-text {
       display: none;
     }
+}
+@media (min-width: @width-tablet) {
+  .how-we-are-working {
+    background-image: url(../img/how-we-are-working.png);
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
+      &__text {
+        width: 40%;
+        margin-left: 8%;
+      }
+      &__list {
+        width: 40%;
+        margin-left: 8%;
+      }
+      &__item {
+        margin-left: 0;
+      }
+  }
 }

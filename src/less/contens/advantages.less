@@ -52,3 +52,32 @@
         }
     }
 }
+@media (min-width: @width-tablet) {
+  .advantages {
+    background-image: url(../img/advantages-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+      &__tagline {
+        margin-bottom: 50px;
+      }
+      &__blocks-text {
+        width: 60%;
+      }
+      &__block-text {
+        margin-bottom: 40px;
+        padding-left: 50px;
+        box-sizing: border-box;
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+      }
+      &__img {
+        top: 5px;
+        left: 5px;
+      }
+      &__text {
+        padding-top: 0;
+      }
+  }
+}

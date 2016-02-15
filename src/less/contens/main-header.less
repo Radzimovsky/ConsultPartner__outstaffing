@@ -1,10 +1,13 @@
 .main-header {
   position: relative;
   background: @white;
+  padding-top: 93px;
   padding-bottom: 100px;
+  font-size: 0;
     &::after {
       content: '';
       position: absolute;
+      top: 92px;
       margin-right: 1.25%;
       margin-left: 1.25%;
       width: 97.5%;
@@ -12,14 +15,66 @@
       background: linear-gradient(to left, #f5f5f5 0%, #252525 20%, #252525 80%, #f5f5f5 100%);
     }
     &__top {
-      padding-top: 20px;
-      padding-bottom: 23px;
+      width: 100%;
+      // padding-top: 20px;
+      // padding-bottom: 23px;
     }
     &__logo {
-      display: block;
-      margin: 0 auto;
+      position: absolute;
+      top: 19px;
+      left: 50%;
+      transform: translateX(-50%);
     }
-    &__secondary-navigation {
+    &__phone {
       display: none;
     }
+}
+@media (min-width: @width-tablet) {
+  .main-header {
+    padding-top: 166px;
+    padding-bottom: 15px;
+        &::after {
+          top: 138px;
+        }
+        &__top {
+          padding-top: 0;
+          padding-right: 2.6%;
+          padding-bottom: 0;
+          padding-left: 2.6%;
+        }
+        &__logo {
+          left: 20%;
+          margin: 0;
+        }
+        &__phone {
+          display: inline-block;
+          position: absolute;
+          top: 25px;
+          left: 56.5%;
+          transform: translateX(-50%);
+            &-img {
+              margin-right: 10px;
+            }
+            &-figures {
+              display: inline-block;
+              vertical-align: top;
+              margin: 0;
+              font-size: 34px;
+              line-height: 34px;
+              color: #06385f;
+              font-weight: bold;
+              font-family: "KabelC Book", "Verdana", sans-serif;
+                &--mini {
+                  position: relative;
+                  right: 5px;
+                  bottom: 12px;
+                  font-size: 16px;
+                  line-height: 22px;
+                  color: #686868;
+                  font-weight: normal;
+                  font-family: "KabelC Book", "Verdana", sans-serif;
+                }
+            }
+        }
+  }
 }

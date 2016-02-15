@@ -1,0 +1,22 @@
+.secondary-navigation {
+  display: none;
+}
+@media (min-width: @width-tablet) {
+  .secondary-navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+      &__link {
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+      }
+      &__item {
+        font-size: 16px;
+        line-height: 22px;
+        color: #686868;
+        font-weight: normal;
+        font-family: "KabelC Book", "Verdana", sans-serif;
+      }
+  }
+}

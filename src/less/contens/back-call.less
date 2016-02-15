@@ -1,3 +1,27 @@
 .back-call {
   display: none;
 }
+@media (min-width: @width-tablet) {
+  .back-call {
+    position: absolute;
+    display: block;
+    top: 36px;
+    right: 8%;
+    font-size: 15px;
+    line-height: 15px;
+    color: #686868;
+    font-weight: normal;
+    font-family: "KabelC Book", "Verdana", sans-serif;
+    text-transform: uppercase;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -7px;
+        bottom: -7px;
+        width: 1px;
+        height: 37px;
+        background-color: #686868;
+        transform: rotate(35deg);
+      }
+  }
+}

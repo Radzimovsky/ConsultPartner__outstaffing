@@ -49,6 +49,7 @@
       height: 312px;
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
         &:nth-of-type(1) {
           background-image: url(../img/order-easily-1.png);
         }
@@ -73,9 +74,10 @@
     }
     &__arrow {
       position: absolute;
-      top: 220px;
-      left: 50%;
-      transform: translateX(-50%);
+      top: 250px;
+      left: 35%;
+      transform: rotate(90deg) translateX(10%);
+      z-index: 5;
     }
     &__text-in-block {
       position: relative;
@@ -97,4 +99,13 @@
           background-color: #309dc1;
         }
     }
+}
+@media (min-width: @width-tablet) {
+  .order-easily {
+      &__block {
+        min-width: none;
+        max-width: none;
+        width: 480px;
+      }
+  }
 }

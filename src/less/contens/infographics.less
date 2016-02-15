@@ -6,5 +6,21 @@
   background-color: #19344f;
     &__img {
       padding-bottom: 45px;
+      width: 219px;
     }
+}
+@media (min-width: @width-tablet) {
+  .infographics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    max-width: 500px;
+    background-color: transparent;
+  }
 }

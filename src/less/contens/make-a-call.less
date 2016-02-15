@@ -2,11 +2,15 @@
   padding-top: 40px;
   background-color: #dedbd6;
     &__text {
+      display: inline-block;
       position: relative;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      padding-left: 37px;
-      width: 70%;
+      margin: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 10px;
+      padding-right: 5%;
+      padding-left: 21%;
+      box-sizing: border-box;
       font-size: 19px;
       line-height: 25px;
       color: #686868;
@@ -18,7 +22,7 @@
           position: absolute;
           content: '';
           top: 0;
-          left: 0;
+          left: 12%;
           width: 37px;
           height: 37px;
           background-image: url(../img/make-a-call-img.png);
@@ -59,4 +63,23 @@
       text-transform: uppercase;
       background-color: #309dc1;
     }
+}
+@media (min-width: @width-tablet) {
+  .make-a-call {
+    padding-bottom: 40px;
+      &__text {
+        padding-right: 19%;
+        padding-left: 25%;
+          &::after {
+            left: 20%;
+          }
+      }
+      &__button {
+        position: relative;
+        width: 44%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 4px;
+      }
+  }
 }

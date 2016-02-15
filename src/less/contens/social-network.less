@@ -1,0 +1,42 @@
+.social-network {
+  display: none;
+  font-size: 0;
+}
+@media (min-width: @width-tablet) {
+  .social-network {
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    display: inline-block;
+    vertical-align: top;
+    transform: translateX(100%);
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        width: 100%;
+        height: 1px;
+        background-color: #bcbcbc;
+      }
+      &__link {
+        display: inline-block;
+        vertical-align: top;
+        width: 28px;
+        height: 28px;
+          &--fb {
+            background-image: url(../img/fb.png);
+            background-repeat: no-repeat;
+            margin-right: 4px;
+          }
+          &--tw {
+            background-image: url(../img/tw.png);
+            background-repeat: no-repeat;
+            margin-right: 4px;
+          }
+          &--goo {
+            background-image: url(../img/goo.png);
+            background-repeat: no-repeat;
+          }
+      }
+  }
+}

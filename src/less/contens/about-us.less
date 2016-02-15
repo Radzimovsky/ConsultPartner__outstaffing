@@ -75,3 +75,19 @@
         }
     }
 }
+@media (min-width: @width-tablet) {
+  .about-us {
+    background-image: url(../img/about-us__img.png), url(../img/guarantees-background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left top ;
+    background-size: auto, 100% 100%;
+      &__list {
+        margin: 0 8%;
+        width: 75%;
+      }
+      &__item {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+  }
+}

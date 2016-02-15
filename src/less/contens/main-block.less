@@ -4,9 +4,15 @@
       height: 730px;
       background-color: #14293f;
       background-image: url(../img/main-block__text-block.png);
-      background-position: center;
+      background-position: 48% 10%;
       background-repeat: no-repeat;
       background-size: auto 100%;
+    }
+    &__accreditation {
+      position: absolute;
+      top: 22px;
+      left: 50%;
+      transform: translateX(-50%);
     }
     &__tagline {
       position: absolute;
@@ -28,7 +34,7 @@
       top: 450px;
       left: 50%;
       transform: translateX(-50%);
-      width: 65%;
+      width: 75%;
       font-size: 26px;
       line-height: 32px;
       color: #fefefe;
@@ -42,4 +48,27 @@
           top: 575px;
         }
     }
+}
+@media (min-width: @width-tablet) {
+  .main-block {
+    position: relative;
+      &__text-block {
+        height: 825px;
+      }
+      &__text {
+        top: 323px;
+          &--wider {
+            top: 385px;
+              &::before {
+                content: '';
+                position: absolute;
+                top: -15px;
+                left: 30%;
+                width: 40%;
+                height: 1px;
+                background: linear-gradient(to left, #4f5f6c 0%, #ffffff 20%, #ffffff 80%, #4f5f6c 100%);
+              }
+          }
+      }
+  }
 }
