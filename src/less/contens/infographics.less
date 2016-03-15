@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 47px;
+  padding-top: 27px;
   background-color: #19344f;
     &__img {
       padding-bottom: 45px;
@@ -16,11 +16,23 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: absolute;
-    top: 450px;
+    top: 480px;
     left: 50%;
     transform: translateX(-50%);
+    padding-right: 30px;
+    padding-left: 30px;
     width: 65%;
     max-width: 500px;
-    background-color: transparent;
+    background-color: rgba(29, 29, 29, 0.5);
+  }
+}
+@media (min-width: @width-desktop) {
+  .infographics {
+    width: 1020px ;
+    max-width: none;
+      &__img {
+        padding-bottom: 25px;
+        width: 219px;
+      }
   }
 }

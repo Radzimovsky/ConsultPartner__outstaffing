@@ -1,6 +1,9 @@
 .make-a-call {
   padding-top: 40px;
   background-color: #dedbd6;
+    &__content {
+      .content-width();
+    }
     &__text {
       display: inline-block;
       position: relative;
@@ -79,6 +82,42 @@
         width: 44%;
         left: 50%;
         transform: translateX(-50%);
+        border-radius: 4px;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .make-a-call {
+    padding-top: 35px;
+    padding-bottom: 25px;
+      &__text {
+        display: inline-block;
+        vertical-align: top;
+        bottom: -12px;
+        margin: 0;
+        margin-left: 110px;
+        padding: 0;
+        padding-left: 45px;
+        width: auto;
+        left: auto;
+        transform: translateX(0%);
+          &::after {
+            top: -6px;
+            left: 0;
+          }
+      }
+      &__number {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-left: 15px;
+      }
+      &__button {
+        top: -5px;
+        margin-left: 70px;
+        width: 333px;
+        left: auto;
+        transform: translateX(0%);
         border-radius: 4px;
       }
   }

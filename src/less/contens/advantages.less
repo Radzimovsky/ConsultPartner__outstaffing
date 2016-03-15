@@ -2,6 +2,9 @@
   padding-top: 55px;
   padding-bottom: 40px;
   background-color: black;
+    &__content {
+      .content-width();
+    }
     &__tagline {
       position: relative;
       margin: 0 auto;
@@ -30,10 +33,14 @@
     }
     &__block-text {
       position: relative;
+      display: inline-block;
+      vertical-align: top;
+      padding-top: 60px;
+      width: 100%;
     }
     &__img {
       position: absolute;
-      top: 33px;
+      top: 5px;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -46,6 +53,7 @@
       font-weight: normal;
       font-family: "Myriad Pro", "Verdana", sans-serif;
         &--small {
+          margin: 0;
           font-size: 16px;
           line-height: 22px;
           color: #dad7d7;
@@ -66,18 +74,63 @@
       }
       &__block-text {
         margin-bottom: 40px;
+        padding-top: 0;
         padding-left: 50px;
         box-sizing: border-box;
+          &:nth-of-type(4) .advantages__text--small {
+            margin-top: 15px;
+          }
+          &:nth-of-type(5) .advantages__text--small {
+            margin-top: 20px;
+          }
           &:last-of-type {
             margin-bottom: 0;
           }
       }
       &__img {
         top: 5px;
-        left: 5px;
+        left: 15px;
       }
       &__text {
         padding-top: 0;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .advantages {
+    // padding-bottom: 10px;
+      &__tagline {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-bottom: 50px;
+        margin-left: 145px;
+        width: 540px;
+        text-align: left;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 100%;
+            background-color: #309dc1;
+          }
+      }
+      &__blocks-text {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 1000px;
+      }
+      &__block-text {
+        margin-bottom: 20px;
+        padding-left: 70px;
+        width: 500px;
+      }
+      &__img {
+        left: 30px;
       }
   }
 }

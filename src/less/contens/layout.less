@@ -1,17 +1,51 @@
 body{
-  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100%; /* считается от body */
+  // background: #ababab;
+  background: #ffffff;
 }
 .wrapper {
   min-width: 320px;
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: 0 auto;
-  background: #ffffff;
+  box-shadow:  0 0 10px rgba(0,0,0,0.5);
 }
+// @media (min-width: @width-desktop) {
+//   .wrapper {
+//     width: 100vw;
+//     max-width: 100%; /* считается от body */
+//   }
+// }
 .content {
   width: 100%;
+  // max-width: 1280px;
+  margin: 0 auto;
 }
 .clearfix::after{
 	content: '';
 	display: table;
 	clear: both;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"),
+    url("../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype"),
+    url("../fonts/MyriadPro-Regular/MyriadPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KabelC Book';
+  src: url("../fonts/kabelc-book/kabelc-book");
+  src: url("../fonts/kabelc-book/kabelc-book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/kabelc-book/kabelc-book.woff2") format("woff2"),
+    url("../fonts/kabelc-book/kabelc-book.woff") format("woff"),
+    url("../fonts/kabelc-book/kabelc-book.ttf") format("truetype"),
+    url("../fonts/kabelc-book/nautilus_pompilius-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }

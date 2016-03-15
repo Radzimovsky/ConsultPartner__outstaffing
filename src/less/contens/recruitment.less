@@ -1,5 +1,8 @@
 .recruitment {
   width: 100%;
+    &__content {
+      .content-width();
+    }
     &__block-text {
       padding-top: 60px;
       padding-bottom: 66px;
@@ -62,6 +65,16 @@
       }
       &__text {
         width: 90%;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .recruitment {
+    position: relative;
+      &__block-text {
+        margin: 0;
+        margin-left: 145px ;
+        width: 495px;
       }
   }
 }

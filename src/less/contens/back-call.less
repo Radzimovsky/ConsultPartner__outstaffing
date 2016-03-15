@@ -4,7 +4,7 @@
 @media (min-width: @width-tablet) {
   .back-call {
     position: absolute;
-    display: block;
+    display: none;
     top: 36px;
     right: 8%;
     font-size: 15px;
@@ -16,12 +16,29 @@
       &::before {
         content: '';
         position: absolute;
-        left: -7px;
+        left: 10px;
         bottom: -7px;
         width: 1px;
         height: 37px;
         background-color: #686868;
         transform: rotate(35deg);
       }
+  }
+}
+@media (min-width: @width-desktop) {
+  .back-call {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    top: auto;
+    right: 0;
+    bottom: 5px;
+    margin-right: 60px;
+    padding-left: 20px;
+    // top: 55px;
+    // right: 55px;
+    // left: none;
+    // width: 140px;
+    // transform: translateX(0%);
   }
 }

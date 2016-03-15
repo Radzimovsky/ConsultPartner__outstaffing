@@ -1,7 +1,11 @@
 .main-footer {
   position: relative;
-  padding-bottom: 20px;
+  margin: 0 auto;
   background-color: #1d1d1d;
+    &__content {
+      .content-width();
+      padding-bottom: 20px;
+    }
     &__blocks {
       display: flex;
       justify-content: space-between;
@@ -67,4 +71,31 @@
       font-family: "Myriad Pro", "Verdana", sans-serif;
       text-align: center;
     }
+}
+@media (min-width: @width-desktop) {
+  .main-footer {
+      &__blocks {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        font-size: 0;
+        margin-bottom: 40px;
+        padding-left: 75px;
+      }
+      &__block {
+        width: 325px;
+        padding-left: 0;
+      }
+      &__link {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 5px;
+      }
+      &__all-rights-soblediny {
+        width: auto;
+      }
+      &__transfer {
+        display: none;
+      }
+  }
 }

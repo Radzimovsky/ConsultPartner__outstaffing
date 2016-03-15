@@ -4,6 +4,9 @@
   width: 100%;
   overflow: hidden;
   background-color: #dcd9d3;
+    &__content {
+      .content-width();
+    }
     &__text-block {
       padding-top: 54px;
       padding-bottom: 34px;
@@ -20,6 +23,9 @@
       font-family: "Myriad Pro", "Verdana", sans-serif;
       text-align: center;
       text-transform: uppercase;
+        &--mini {
+          font-size: 50px;
+        }
     }
     &__text {
       margin: 0 auto;
@@ -68,31 +74,83 @@
 }
 @media (min-width: @width-tablet) {
   .problems {
-    padding-top: 45px;
     background-color: #696969;
     background-image: url(../img/problems-background.png);
     background-repeat: no-repeat;
     background-position: top;
-    &__text-block {
-      position: relative;
-      margin: 0 auto;
-      margin-bottom: 306px;
-      padding-top: 25px;
-      padding-bottom: 0;
-      width: 300px;
-      z-index: 5;
-    }
-    &__img {
-      display: block;
-      position: absolute;
-      top: 45px;
-      left: 50%;
-      transform: translateX(-41.5%);
-      z-index: 0;
-    }
-    &__list {
-      padding-top: 10px;
-      background-color: #dcd9d3;
-    }
+      &__content {
+        padding-top: 45px;
+      }
+      &__text-block {
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 306px;
+        padding-top: 25px;
+        padding-bottom: 0;
+        width: 300px;
+        z-index: 5;
+      }
+      &__tagline {
+        margin: 0 auto;
+        width: 230px;
+      }
+      &__img {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-41.5%);
+        z-index: 0;
+      }
+      &__list {
+        padding-top: 10px;
+        background-color: #dcd9d3;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .problems {
+    overflow: visible;
+      &__content {
+        padding-top: 120px;
+        padding-bottom: 138px;
+      }
+      &__text-block {
+        position: absolute;
+        top: -40px;
+        left: 162px;
+        margin: 0;
+      }
+      &__img {
+        top: -43px;
+        left: 75px;
+        transform: translateX(0%);
+        z-index:  0;
+      }
+      &__list {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-left: 662px;
+        padding: 0;
+        width: 545px;
+        box-sizing: border-box;
+        list-style: none;
+        background-color: transparent;
+      }
+      &__item {
+        padding: 0;
+        padding-left: 45px;
+        padding-bottom: 10px;
+        text-align: left;
+          &:last-of-type {
+            padding-bottom: 0;
+          }
+          &::before {
+            top: 5px;
+            left: 20px;
+
+          }
+      }
   }
 }

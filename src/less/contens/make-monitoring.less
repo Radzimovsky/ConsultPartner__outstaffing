@@ -1,6 +1,10 @@
 .make-monitoring {
+  position: relative;
   width: 100%;
   background-color: #dedbd6;
+    &__content {
+      .content-width();
+    }
     &__text-block {
       padding-top: 35px;
       padding-bottom: 45px;
@@ -72,6 +76,9 @@
           font-weight: bold;
         }
     }
+    &__arrow{
+      display: none;
+    }
 }
 @media (min-width: @width-tablet) {
   .make-monitoring {
@@ -79,5 +86,49 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+      &__content {
+        padding-bottom: 30px;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .make-monitoring {
+      &__content {
+        padding-left: 145px;
+        box-sizing: border-box;
+      }
+      &__tagline{
+        display: block;
+        margin: 0;
+        margin-bottom: 40px;
+        width: 240px;
+        text-align: left;
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            transform: translateX(0%);
+            height: 4px;
+            width: 95%;
+            background-color: #309dc1;
+          }
+      }
+      &__text {
+        margin: 0;
+        margin-bottom: 20px;
+      }
+      &__item {
+        margin: 0;
+        margin-bottom: 20px;
+        padding-left: 25px;
+        width: 410px;
+      }
+      &__arrow{
+        display: block;
+        position: absolute;
+        top: 40px;
+        left: 540px;
+      }
   }
 }

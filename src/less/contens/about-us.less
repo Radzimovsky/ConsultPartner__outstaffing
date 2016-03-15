@@ -1,8 +1,11 @@
 .about-us {
-  padding-top: 50px;
-  padding-bottom: 35px;
   width: 100%;
   background-color: #6c747b;
+    &__content {
+      .content-width();
+      padding-top: 50px;
+      padding-bottom: 35px;
+    }
     &__tagline {
       position: relative;
       margin: 0 auto;
@@ -77,10 +80,30 @@
 }
 @media (min-width: @width-tablet) {
   .about-us {
-    background-image: url(../img/about-us__img.png), url(../img/guarantees-background.png);
+    background-image: url(../img/guarantees-background.png);
     background-repeat: no-repeat;
     background-position: bottom right, left top ;
-    background-size: auto, 100% 100%;
+    background-size: 100% 100%;
+      &__text {
+          &:nth-of-type(4) {
+            width: 65%;
+          }
+          &:nth-of-type(5) {
+            width: 55%;
+          }
+          &:nth-of-type(6) {
+            width: 55%;
+          }
+          &:nth-of-type(7) {
+            width: 55%;
+          }
+      }
+      &__content {
+        background-image: url(../img/about-us__img.png);
+        background-repeat: no-repeat;
+        background-position: bottom right, left top ;
+        background-size: auto;
+      }
       &__list {
         margin: 0 8%;
         width: 75%;
@@ -88,6 +111,56 @@
       &__item {
         margin: 0;
         margin-bottom: 20px;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .about-us {
+    background-image: url(../img/guarantees-background.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left top ;
+    background-size: 100% 100%;
+      &__content {
+        padding-top: 30px;
+        padding-bottom: 5px;
+        background-image: url(../img/about-us__img-1280.png);
+        background-repeat: no-repeat;
+        background-position: bottom right, left top ;
+        background-size: auto;
+      }
+      &__tagline {
+        margin: 0;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-left: 145px;
+        width: 145px;
+        text-align: left;
+          &::after {
+            left: 0;
+            transform: translateX(0%);
+            width: 95%;
+          }
+      }
+      &__text {
+        display: inline-block;
+        vertical-align: top;
+        width: 700px;
+        margin-right: 0;
+        margin-left: 145px;
+          &--bold {
+            margin: 0;
+            width: auto;
+          }
+      }
+      &__list {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+        margin-left: 145px;
+        width: auto;
+      }
+      &__item {
+        width: 700px;
       }
   }
 }

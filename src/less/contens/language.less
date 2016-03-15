@@ -9,6 +9,7 @@
     }
     &__link {
       display: inline-block;
+      vertical-align: top;
       margin-right: 7px;
         &:last-child {
           margin-right: 0;
@@ -17,8 +18,10 @@
 }
 @media (min-width: @width-tablet) {
   .language {
-    top: 90px;
-    left: 20%;
+    top: 21px;
+    right: 60px;
+    left: auto;
+    transform: translateX(0%);
       &--main-footer {
         display: block;
         position: absolute;
@@ -27,6 +30,19 @@
         left: auto;
         bottom: 70px;
         transform: translateX(100%);
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .language {
+    top: 21px;
+    right: 60px;
+    left: auto;
+    transform: translateX(0%);
+      &--main-footer {
+        top: 35px;
+        bottom: auto;
+        right: 75px;
       }
   }
 }

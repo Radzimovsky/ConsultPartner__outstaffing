@@ -2,6 +2,9 @@
   padding-top: 45px;
   padding-bottom: 45px;
   background-color: #737a7f;
+    &__content {
+      .content-width();
+    }
     &__tagline {
       margin: 0 auto;
       margin-bottom: 35px;
@@ -63,6 +66,30 @@
         position: absolute;
         width: 100%;
         top: 530px;
+      }
+  }
+}
+@media (min-width: @width-desktop) {
+  .guarantees {
+    text-align: center;
+      &__blocks {
+        display: inline-block;
+      }
+      &__block{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 70px;
+        width: auto;
+          &:last-of-type {
+            margin-right: 0;
+          }
+      }
+      &__clarification {
+        position: absolute;
+        width: 620px;
+        top: 280px;
+        left: 50%;
+        transform: translateX(-50%);
       }
   }
 }
