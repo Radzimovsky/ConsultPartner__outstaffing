@@ -69,6 +69,15 @@
         &:nth-of-type(4)  {
           margin-bottom: 0;
         }
+        &:hover {
+          background-color: #8EDAF3;
+        }
+        &:active {
+          background-color: #6CA9BD;
+        }
+    }
+    &--modal {
+      width: 100%;
     }
 }
 @media (min-width: @width-tablet) {
@@ -80,6 +89,9 @@
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
       &__tagline {
         width: 100%;
+      }
+      &--modal {
+        width: 480px;
       }
   }
 }

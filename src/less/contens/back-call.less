@@ -5,23 +5,35 @@
   .back-call {
     position: absolute;
     display: none;
-    top: 36px;
-    right: 8%;
+    vertical-align: top;
+    top: -25px;
+    right: 42px;
+    padding: 5px;
     font-size: 15px;
     line-height: 15px;
-    color: #686868;
+    color: #ffffff;
     font-weight: normal;
     font-family: "KabelC Book", "Verdana", sans-serif;
     text-transform: uppercase;
-      &::before {
-        content: '';
-        position: absolute;
-        left: 10px;
-        bottom: -7px;
-        width: 1px;
-        height: 37px;
-        background-color: #686868;
-        transform: rotate(35deg);
+    background-color: #309dc1;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   left: 10px;
+      //   bottom: -7px;
+      //   width: 1px;
+      //   height: 37px;
+      //   background-color: #686868;
+      //   transform: rotate(35deg);
+      // }
+      &:hover {
+        background-color: #068BB7;
+      }
+      &:active {
+        background-color: #6CA9BD;
       }
   }
 }
@@ -32,9 +44,8 @@
     vertical-align: bottom;
     top: auto;
     right: 0;
-    bottom: 5px;
-    margin-right: 60px;
-    padding-left: 20px;
+    bottom: 3px;
+    margin-right: 30px;
     // top: 55px;
     // right: 55px;
     // left: none;

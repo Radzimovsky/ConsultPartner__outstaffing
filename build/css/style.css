@@ -540,9 +540,13 @@ body
 .main-header__top
 {
     position: relative;
+    z-index: 100;
+    top: 0;
 
     width: 100%;
     height: 133px;
+
+    background: #fff;
 }
 
 .main-header__top-content
@@ -987,6 +991,21 @@ body
 .application__sumbut:nth-of-type(4)
 {
     margin-bottom: 0;
+}
+
+.application__sumbut:hover
+{
+    background-color: #8edaf3;
+}
+
+.application__sumbut:active
+{
+    background-color: #6ca9bd;
+}
+
+.application--modal
+{
+    width: 100%;
 }
 
 .problems
@@ -2108,6 +2127,7 @@ body
     width: 100%;
     padding: 12px 0;
 
+    cursor: pointer;
     text-align: center;
     vertical-align: top;
     text-decoration: none;
@@ -2115,6 +2135,16 @@ body
 
     color: #fff;
     background-color: #309dc1;
+}
+
+.make-a-call__button:hover
+{
+    background-color: #068bb7;
+}
+
+.make-a-call__button:active
+{
+    background-color: #6ca9bd;
 }
 
 .main-footer
@@ -2254,24 +2284,21 @@ body
     .main-header
     {
         margin: 0 auto;
-        padding-top: 0;
-    }
-
-    .main-header::after
-    {
-        top: 138px;
+        padding-top: 125px;
     }
 
     .main-header__top
     {
-        height: 138px;
+        position: fixed;
+
+        height: 125px;
         padding-top: 0;
         padding-bottom: 0;
     }
 
     .main-header__top-content::after
     {
-        top: 138px;
+        display: none;
     }
 
     .main-header__logo
@@ -2362,41 +2389,44 @@ body
         line-height: 15px;
 
         position: absolute;
-        top: 36px;
-        right: 8%;
+        top: -25px;
+        right: 42px;
 
         display: none;
 
+        padding: 5px;
+
+        cursor: pointer;
+        text-align: center;
+        vertical-align: top;
         text-transform: uppercase;
 
-        color: #686868;
+        color: #fff;
+        border-radius: 4px;
+        background-color: #309dc1;
     }
 
-    .back-call::before
+    .back-call:hover
     {
-        position: absolute;
-        bottom: -7px;
-        left: 10px;
+        background-color: #068bb7;
+    }
 
-        width: 1px;
-        height: 37px;
-
-        content: '';
-        -webkit-transform: rotate(35deg);
-                transform: rotate(35deg);
-
-        background-color: #686868;
+    .back-call:active
+    {
+        background-color: #6ca9bd;
     }
 
     .secondary-navigation
     {
+        position: relative;
+
         display: -webkit-flex;
         display: -ms-flexbox;
         display:         flex;
 
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 0 auto;
         padding: 0;
+        padding-top: 5px;
 
         -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -2406,6 +2436,9 @@ body
     .secondary-navigation__link
     {
         display: inline-block;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
 
         vertical-align: top;
         text-decoration: none;
@@ -2419,6 +2452,23 @@ body
         line-height: 22px;
 
         color: #686868;
+    }
+
+    .secondary-navigation::before
+    {
+        position: absolute;
+        top: 5px;
+        left: 0;
+
+        width: 97.5%;
+        max-width: 1280px;
+        height: 1px;
+        margin-right: 1.25%;
+        margin-left: 1.25%;
+
+        content: '';
+
+        background: linear-gradient(to left, #f5f5f5 0%, #252525 20%, #252525 80%, #f5f5f5 100%);
     }
 
     .language
@@ -2604,6 +2654,11 @@ body
     .application__tagline
     {
         width: 100%;
+    }
+
+    .application--modal
+    {
+        width: 480px;
     }
 
     .problems
@@ -2925,18 +2980,18 @@ body
     .main-header
     {
         margin: 0 auto;
-        padding-top: 0;
+        padding-top: 155px;
     }
 
     .main-header__top
     {
-        height: 160px;
+        height: 155px;
         padding: 0;
     }
 
     .main-header__top-content::after
     {
-        top: 160px;
+        display: none;
     }
 
     .main-header__logo
@@ -2977,12 +3032,11 @@ body
         position: relative;
         top: auto;
         right: 0;
-        bottom: 5px;
+        bottom: 3px;
 
         display: inline-block;
 
-        margin-right: 60px;
-        padding-left: 20px;
+        margin-right: 30px;
 
         vertical-align: bottom;
     }
@@ -3054,9 +3108,6 @@ body
     .secondary-navigation
     {
         width: 600px;
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
     .language

@@ -115,8 +115,8 @@ module.exports = function(grunt) {
     "cmq",
     "csscomb",
     "cssmin",
-    "uglify",
-    "imagemin"
+    // "uglify",
+    // "imagemin"
   ]);
 
 };
