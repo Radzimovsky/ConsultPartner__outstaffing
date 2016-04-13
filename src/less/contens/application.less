@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding-top: 60px;
-  padding-bottom: 72px;
+  padding-bottom: 20px;
   background-color: #309dc1;
   font-size: 0;
   text-align: center;
@@ -13,6 +13,7 @@
     }
     &__tagline {
       margin: 0 auto;
+      margin-bottom: 25px;
       padding: 0;
       width: 56.25%;
       font-size: 36px;
@@ -23,8 +24,7 @@
       text-align: center;
       text-transform: uppercase;
         &--mini {
-          margin-top: 25px;
-          margin-bottom: 36px;
+          margin-bottom: 25px;
           font-size: 22px;
           line-height: 22px;
           text-transform: none;
@@ -45,12 +45,20 @@
       border-radius: 3px;
       border: none;
       outline: none;
-        &:nth-of-type(2)  {
-          margin-bottom: 33px;
-        }
+      -webkit-box-shadow:1px 1px 1px #000000, inset 0px 0px 1px #ffffff;
+      -moz-box-shadow: 1px 1px 1px #000000,  inset 0px 0px 1px #ffffff;
+      box-shadow:1px 1px 1px #000000, inset 0px 0px 1px #ffffff;
+        // &:nth-of-type(3)  {
+        //   margin-bottom: 25px;
+        // }
+          &--text {
+            padding: 6px 21px;
+            height: auto;
+            resize: none;
+          }
     }
     &__sumbut {
-      margin-bottom: 14px;
+      margin-bottom: 25px;
       width: 73.125%;
       height: 42px;
       font-size: 22px;
@@ -66,9 +74,43 @@
       border: none;
       outline: none;
       cursor: pointer;
-        &:nth-of-type(4)  {
-          margin-bottom: 0;
+      -webkit-box-shadow:1px 1px 1px #000000, inset 0px 0px 1px #ffffff;
+      -moz-box-shadow: 1px 1px 1px #000000,  inset 0px 0px 1px #ffffff;
+      box-shadow:1px 1px 1px #000000, inset 0px 0px 1px #ffffff;
+        // &:nth-of-type(5)  {
+        //   margin-bottom: 0;
+        // }
+        &:hover {
+          background-color: #8EDAF3;
         }
+        &:active {
+          background-color: #6CA9BD;
+        }
+    }
+    &__write-a-letter {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 25px;
+      padding: 10px 0;
+      width: 73.125%;
+      height: 42px;
+      font-size: 22px;
+      line-height: 22px;
+      color: #309dc1;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-box-shadow:1px 1px 1px #000000, inset 0px 0px 1px #ffffff;
+      -moz-box-shadow: 1px 1px 1px #000000,  inset 0px 0px 1px #ffffff;
+      box-shadow:1px 1px 1px #000000, inset 0px 0px 1px #ffffff;
         &:hover {
           background-color: #8EDAF3;
         }
@@ -91,6 +133,8 @@
         width: 100%;
       }
       &--modal {
+        top: 0;
+        right: 0;
         width: 480px;
       }
   }
@@ -101,5 +145,9 @@
     top: 86px;
     right: 85px;
     width: 480px;
+      &--modal {
+        top: 0;
+        right: 0;
+      }
   }
 }

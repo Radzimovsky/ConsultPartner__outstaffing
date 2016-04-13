@@ -47,6 +47,7 @@
 }
 .box-modal {
     position: relative;
+    background: #309dc1;
     /*width: 655px;
     min-height: 120px;
     padding: 20px;

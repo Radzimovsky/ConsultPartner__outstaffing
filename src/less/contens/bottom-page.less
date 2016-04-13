@@ -1,0 +1,103 @@
+.bottom-page {
+  margin: 0;
+  padding: 0;
+  background-color: #dedbd6;
+    &__content {
+      padding: 20px;
+    }
+    &__title {
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: auto;
+      font-size: 54px;
+      line-height: 60px;
+      color: #303030;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-align: center;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 4px;
+          width: 100%;
+          background-color: #309dc1;
+        }
+    }
+    &__subtitle {
+      font-size: 24px;
+      line-height: 28px;
+      color: #303030;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+    }
+    &__heading {
+      font-size: 19px;
+      line-height: 22px;
+      color: #303030;
+      font-weight: bold;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+    }
+    &__text {
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 26px;
+      color: #303030;
+      font-weight: normal;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-indent: 40px;
+      text-align: justify;
+    }
+    &__list {
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+      font-size: 25px;
+      line-height: 30px;
+      color: #303030;
+      font-weight: bold;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      text-indent: 40px;
+      text-align: justify;
+    }
+    &__item {
+      margin: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      padding: 0;
+      font-size: 19px;
+      line-height: 25px;
+      color: #303030;
+      font-weight: normal;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      text-indent: 0px;
+    }
+    &__call-us {
+      margin: 0;
+      margin-top: 40px;
+      padding: 0;
+      font-size: 25px;
+      line-height: 30px;
+      color: #303030;
+      font-weight: bold;
+      font-family: "KabelC Book", "Verdana", sans-serif;
+      text-align: center;
+    }
+}
+@media (min-width: @width-desktop) {
+  .bottom-page {
+      &__content {
+        margin: 0 auto;
+        padding: 40px;
+        max-width: @width-desktop;
+      }
+      &__title {
+        width: 400px;
+      }
+  }
+}

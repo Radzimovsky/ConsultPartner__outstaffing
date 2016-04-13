@@ -14,6 +14,9 @@
       z-index: 100;
       // padding-top: 20px;
       // padding-bottom: 23px;
+        &--bottom-page {
+          position: relative;
+        }
     }
     &__top-content {
       .content-width();
@@ -43,80 +46,92 @@
   .main-header {
     margin: 0 auto;
     padding-top: 125px;
-        &__top {
-          position: fixed;
-          height: 125px;
-          padding-top: 0;
-          // padding-right: 2.6%;
-          padding-bottom: 0;
-          // padding-left: 2.6%;
-        }
-        &__top-content {
-            &::after {
-              display: none;
-            }
-        }
-        &__logo {
-          left: 50%;
-          margin: 0;
-        }
-        &__phone {
-          display: inline-block;
-          vertical-align: bottom;
-          position: absolute;
-          transform: translateX(-50%);
-          top: 80px;
-          left: 50%;
-          width: 768px;
-          text-align: center;
-          overflow: visible;
-            &-img {
-              margin-right: 10px;
-            }
-            &-figures {
-              display: inline-block;
-              vertical-align: bottom;
-              margin: 0;
-              font-size: 34px;
-              line-height: 34px;
-              color: #06385f;
-              font-weight: bold;
-              font-family: "KabelC Book", "Verdana", sans-serif;
-                &--mini {
-                  position: relative;
-                  right: 5px;
-                  bottom: 12px;
-                  font-size: 16px;
-                  line-height: 22px;
-                  color: #686868;
-                  font-weight: normal;
-                  font-family: "KabelC Book", "Verdana", sans-serif;
-                }
-                &--mini-text {
-                  position: relative;
-                  right: 5px;
-                  bottom: 2px;
-                  font-size: 16px;
-                  line-height: 22px;
-                  color: #686868;
-                  font-weight: normal;
-                  font-family: "KabelC Book", "Verdana", sans-serif;
-                  margin-bottom: 10px;
-                }
-                &:nth-of-type(1) {
-                  margin-right: 30px;
-                }
-            }
-        }
+      &--bottom-page {
+        padding-top: 0
+      }
+      &__top {
+        position: fixed;
+        height: 125px;
+        padding-top: 0;
+        // padding-right: 2.6%;
+        padding-bottom: 0;
+        // padding-left: 2.6%;
+          &--bottom-page {
+            position: relative;
+          }
+      }
+      &__top-content {
+          &::after {
+            display: none;
+          }
+      }
+      &__logo {
+        left: 50%;
+        margin: 0;
+      }
+      &__phone {
+        display: inline-block;
+        vertical-align: bottom;
+        position: absolute;
+        transform: translateX(-50%);
+        top: 80px;
+        left: 50%;
+        width: 768px;
+        text-align: center;
+        overflow: visible;
+          &-img {
+            margin-right: 10px;
+          }
+          &-figures {
+            display: inline-block;
+            vertical-align: bottom;
+            margin: 0;
+            font-size: 34px;
+            line-height: 34px;
+            color: #06385f;
+            font-weight: bold;
+            font-family: "KabelC Book", "Verdana", sans-serif;
+              &--mini {
+                position: relative;
+                right: 5px;
+                bottom: 12px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #686868;
+                font-weight: normal;
+                font-family: "KabelC Book", "Verdana", sans-serif;
+              }
+              &--mini-text {
+                position: relative;
+                right: 5px;
+                bottom: 2px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #686868;
+                font-weight: normal;
+                font-family: "KabelC Book", "Verdana", sans-serif;
+                margin-bottom: 10px;
+              }
+              &:nth-of-type(1) {
+                margin-right: 30px;
+              }
+          }
+      }
   }
 }
 @media (min-width: @width-desktop) {
   .main-header {
     margin: 0 auto;
     padding-top: 155px;
+      &--bottom-page {
+        padding-top: 0
+      }
       &__top {
         height: 155px;
         padding: 0;
+          &--bottom-page {
+            position: relative;
+          }
       }
       &__top-content {
           &::after {

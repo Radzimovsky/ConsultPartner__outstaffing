@@ -30,11 +30,31 @@ $form['form-1'] = array(
 			'title' => 'Телефон',
 			'validate' => array(
 				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
-				'minlength' => '7',
+				'minlength' => '0',
 			),
 			'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'e-mail' => array(
+			'title' => 'e-mail',
+			'validate' => array(
+				'preg' => '%@%is',
+				'minlength' => '0',
+			),
+			'messages' => array(
+				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'text' => array(
+			'title' => 'Сообщение',
+			'validate' => array(
+				'minlength' => '0',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо заполнить',
 			)
 		),
 	),
@@ -46,7 +66,7 @@ $form['form-1'] = array(
 		'validate' => true,
 		'from_email' => 'noreply@email.com',
 		'from_name' => 'Обратная связь',
-		'to_email' => 'aleradzimovsk@gmail.com, consultpartner@mail.ru',
+		'to_email' => 'aleradzimovsk@gmail.com, consultpartner@mail.ru, 79675321700@yandex.ru',
 		'to_name' => 'noreply1, noreply2',
 		'geoip' => true,
 		'referer' => true,
@@ -80,11 +100,31 @@ $form['form-2'] = array(
 			'title' => 'Телефон',
 			'validate' => array(
 				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
-				'minlength' => '7',
+				'minlength' => '0',
 			),
 			'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'e-mail' => array(
+			'title' => 'e-mail',
+			'validate' => array(
+				'preg' => '%@%is',
+				'minlength' => '0',
+			),
+			'messages' => array(
+				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'text' => array(
+			'title' => 'Сообщение',
+			'validate' => array(
+				'minlength' => '0',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо заполнить',
 			)
 		),
 	),
@@ -96,7 +136,7 @@ $form['form-2'] = array(
 		'validate' => true,
 		'from_email' => 'noreply@email.com',
 		'from_name' => 'Обратная связь',
-		'to_email' => 'aleradzimovsk@gmail.com, consultpartner@mail.ru',
+		'to_email' => 'aleradzimovsk@gmail.com, consultpartner@mail.ru, 79675321700@yandex.ru',
 		'to_name' => 'noreply1, noreply2',
 		'geoip' => true,
 		'referer' => true,
@@ -130,11 +170,31 @@ $form['form-3'] = array(
 			'title' => 'Телефон',
 			'validate' => array(
 				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
-				'minlength' => '7',
+				'minlength' => '0',
 			),
 			'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
 				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'e-mail' => array(
+			'title' => 'e-mail',
+			'validate' => array(
+				'preg' => '%@%is',
+				'minlength' => '0',
+			),
+			'messages' => array(
+				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+				'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+			)
+		),
+		'text' => array(
+			'title' => 'Сообщение',
+			'validate' => array(
+				'minlength' => '0',
+			),
+			'messages' => array(
+				'minlength' => '[ %1$s ] необходимо заполнить',
 			)
 		),
 	),
@@ -146,7 +206,7 @@ $form['form-3'] = array(
 		'validate' => true,
 		'from_email' => 'noreply@email.com',
 		'from_name' => 'Обратная связь',
-		'to_email' => 'aleradzimovsk@gmail.com, consultpartner@mail.ru',
+		'to_email' => 'aleradzimovsk@gmail.com, consultpartner@mail.ru, 79675321700@yandex.ru',
 		'to_name' => 'noreply1, noreply2',
 		'geoip' => true,
 		'referer' => true,

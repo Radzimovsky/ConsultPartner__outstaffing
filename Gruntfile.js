@@ -19,8 +19,8 @@ module.exports = function(grunt) {
             "img/**",
             "js/script.js",
             "index.html",
-            "form.html",
-            "blog.html",
+            "migration-audit.html",
+            "occupational-safety-and-health.html",
             "post.html"
           ],
           dest: "build"
