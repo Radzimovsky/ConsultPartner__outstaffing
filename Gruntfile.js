@@ -22,7 +22,8 @@ module.exports = function(grunt) {
             "migration-audit.html",
             "occupational-safety-and-health.html",
             "near-abroad.html",
-            "CIS-countries.html"
+            "CIS-countries.html",
+            "work-visa.html"
           ],
           dest: "build"
         }]
