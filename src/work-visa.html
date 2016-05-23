@@ -71,7 +71,7 @@
         <li class="secondary-navigation__link"><a href="#" class="secondary-navigation__item">Контакты</a></li>
       </ul>
       <ul class="main-navigation">
-        <li class="main-navigation__link"><a href="#" class="main-navigation__item">Аустаффинг</a></li>
+        <li class="main-navigation__link"><a href="outstaffing.html" class="main-navigation__item">Аустаффинг</a></li>
         <li class="main-navigation__link"><a href="#" class="main-navigation__item">Кадровый аутсорсинг</a></li>
         <li class="main-navigation__link"><a href="migration-audit.html" class="main-navigation__item">миграционный аудит</a></li>
         <li class="main-navigation__link"><a href="work-visa.html" class="main-navigation__item main-navigation__item--active">рабочая виза</a></li>
@@ -149,6 +149,7 @@
         <p class="main-footer__all-rights-soblediny">ООО «Consult Partner» <br class="main-footer__transfer">Санкт-Петербург, 2004-2016. <br  class="main-footer__transfer">© Все права защищены.</p>
       </div>
     </footer>
+    <a href="#" class="scrollup">Наверх</a>
     <div style="display: none;">
       <form class="box-modal application application--modal" action="" name="form-3" id="small-modal">
           <div class="modal-close arcticmodal-close">x</div>
@@ -174,6 +175,22 @@
                 });
         });
 	</script>
+  <!-- скролл вверх -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+      });
+    });
+  </script>
 	<link href="feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css">
 	<link href="feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
 </body>

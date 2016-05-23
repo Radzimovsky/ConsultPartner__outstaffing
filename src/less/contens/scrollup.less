@@ -1,0 +1,28 @@
+.scrollup {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  text-indent:-9999px;
+  background-image: url(../img/icon_top.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: @width-tablet) {
+  .scrollup {
+    right: 50px;
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (min-width: @width-desktop) {
+  .scrollup {
+    bottom: 50px;
+    right: 100px;
+    width: 64px;
+    height: 64px;
+  }
+}

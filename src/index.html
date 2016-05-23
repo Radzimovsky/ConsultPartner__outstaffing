@@ -71,7 +71,7 @@
         <li class="secondary-navigation__link"><a href="#" class="secondary-navigation__item">Контакты</a></li>
       </ul>
       <ul class="main-navigation">
-        <li class="main-navigation__link"><a href="#" class="main-navigation__item">Аустаффинг</a></li>
+        <li class="main-navigation__link"><a href="outstaffing.html" class="main-navigation__item">Аустаффинг</a></li>
         <li class="main-navigation__link"><a href="#" class="main-navigation__item">Кадровый аутсорсинг</a></li>
         <li class="main-navigation__link"><a href="migration-audit.html" class="main-navigation__item">миграционный аудит</a></li>
         <li class="main-navigation__link"><a href="work-visa.html" class="main-navigation__item">рабочая виза</a></li>
@@ -113,6 +113,26 @@
               <div class="clients__block-img">
                 <img class="clients__img clients__img--5" src="./img/pec.png" width="214" height="61" alt="компания 5">
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="guarantees">
+        <div class="guarantees__content">
+          <h2 class="guarantees__tagline">НАША КОМПАНИЯ РАЗРАБОТАЛА НОВЕЙШИЕ ПРЕДЛОЖЕНИЯ В СФЕРЕ УСЛУГ</h2>
+          <div class="guarantees__blocks">
+            <div class="guarantees__block">
+              <img class="guarantees__img" src="./img/guarantees__img--1.png" width="283" height="154" alt="возврат денег">
+              <p class="guarantees__text">При высоком качестве оказания услуг, мы предлагаем цены ниже, чем у наших конкурентов.</p>
+            </div>
+            <div class="guarantees__block">
+              <img class="guarantees__img" src="./img/guarantees__img--2.png" width="283" height="154" alt="сроки">
+              <p class="guarantees__text">Мы организовали собственную курьерскую службу, чтобы Вы и Ваши сотрудники экономили свое время.</p>
+              <!-- <p class="guarantees__clarification">*точный срок исполнения наших обязательств и гарантированной замены будет прописан в договоре на оказание услуг</p> -->
+            </div>
+            <div class="guarantees__block">
+              <img class="guarantees__img" src="./img/guarantees__img--3.png" width="283" height="154" alt="новый спец.">
+              <p class="guarantees__text">Для клиентов, которые пользуются услугой аустаффинга, мы предоставляем подбор персонала бесплатно.</p>
             </div>
           </div>
         </div>
@@ -189,26 +209,6 @@
               <img class="advantages__img" src="./img/advantages__img--6.png" width="43" height="40" alt="проверка">
               <!-- <h3 class="advantages__text">Достоверная проверка рекомендации</h3> -->
               <p class="advantages__text--small">Безопасность и полное соответствие законодательству. Вся ответственность за персонал лежит на нашей компании</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="guarantees">
-        <div class="guarantees__content">
-          <h2 class="guarantees__tagline">НАША КОМПАНИЯ РАЗРАБОТАЛА НОВЕЙШИЕ ПРЕДЛОЖЕНИЯ В СФЕРЕ УСЛУГ</h2>
-          <div class="guarantees__blocks">
-            <div class="guarantees__block">
-              <img class="guarantees__img" src="./img/guarantees__img--1.png" width="283" height="154" alt="возврат денег">
-              <p class="guarantees__text">При высоком качестве оказания услуг, мы предлагаем цены ниже, чем у наших конкурентов.</p>
-            </div>
-            <div class="guarantees__block">
-              <img class="guarantees__img" src="./img/guarantees__img--2.png" width="283" height="154" alt="сроки">
-              <p class="guarantees__text">Мы организовали собсвенную курьерскую службу, чтобы Вы и Ваши сотрудники экономили свое время.</p>
-              <!-- <p class="guarantees__clarification">*точный срок исполнения наших обязательств и гарантированной замены будет прописан в договоре на оказание услуг</p> -->
-            </div>
-            <div class="guarantees__block">
-              <img class="guarantees__img" src="./img/guarantees__img--3.png" width="283" height="154" alt="новый спец.">
-              <p class="guarantees__text">Для клиентов, которые пользуются услугой аустаффинга, мы предоставляем подбор персонала бесплатно.</p>
             </div>
           </div>
         </div>
@@ -413,6 +413,7 @@
       </div>
     </footer>
     <!-- Модульно окно -->
+    <a href="#" class="scrollup">Наверх</a>
     <div style="display: none;">
       <form class="box-modal application application--modal" action="" name="form-3" id="small-modal">
           <div class="modal-close arcticmodal-close">x</div>
@@ -439,6 +440,22 @@
                 });
         });
 	</script>
+  <!-- скролл вверх -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+          $('.scrollup').fadeIn();
+        } else {
+          $('.scrollup').fadeOut();
+        }
+      });
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+      });
+    });
+  </script>
 	<link href="feedback/css/jquery.jgrowl.css" rel="stylesheet" type="text/css">
 	<link href="feedback/css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
 </body>

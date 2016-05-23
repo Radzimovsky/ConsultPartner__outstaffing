@@ -23,7 +23,8 @@ module.exports = function(grunt) {
             "occupational-safety-and-health.html",
             "near-abroad.html",
             "CIS-countries.html",
-            "work-visa.html"
+            "work-visa.html",
+            "outstaffing.html"
           ],
           dest: "build"
         }]
