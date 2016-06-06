@@ -24,7 +24,10 @@ module.exports = function(grunt) {
             "near-abroad.html",
             "CIS-countries.html",
             "work-visa.html",
-            "outstaffing.html"
+            "outstaffing.html",
+            "about-company.html",
+            "HR-outsourcing.html",
+            "accounting-service.html"
           ],
           dest: "build"
         }]

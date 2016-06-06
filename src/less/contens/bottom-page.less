@@ -1,7 +1,7 @@
 .bottom-page {
   margin: 0;
   padding: 0;
-  background-color: #dedbd6;
+  background-color: #dedee0;
     &__content {
       padding: 20px;
     }
@@ -26,24 +26,41 @@
           width: 100%;
           background-color: #309dc1;
         }
+        &--mini {
+          font-size: 40px;
+        }
     }
     &__subtitle {
-      font-size: 24px;
+      margin-left: 40px;
+      font-size: 34px;
       line-height: 28px;
       color: #303030;
       font-weight: bold;
       font-family: "Myriad Pro", "Verdana", sans-serif;
+      text-decoration: underline;
+      animation-name: fadeInUp;
+      -webkit-animation-name: fadeInUp;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
     }
     &__heading {
-      font-size: 19px;
+      font-size: 22px;
       line-height: 22px;
       color: #303030;
       font-weight: bold;
       font-family: "Myriad Pro", "Verdana", sans-serif;
+      animation-name: fadeInUp;
+      -webkit-animation-name: fadeInUp;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
     }
     &__text {
       margin: 0;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       font-size: 18px;
       line-height: 26px;
       color: #303030;
@@ -51,30 +68,43 @@
       font-family: "Myriad Pro", "Verdana", sans-serif;
       text-indent: 40px;
       text-align: justify;
+      animation-name: fadeInUp;
+      -webkit-animation-name: fadeInUp;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
     }
     &__list {
       margin: 0;
       margin-bottom: 20px;
       padding: 0;
-      font-size: 25px;
+      font-size: 26px;
       line-height: 30px;
       color: #303030;
       font-weight: bold;
-      font-family: "KabelC Book", "Verdana", sans-serif;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
       text-indent: 40px;
       text-align: justify;
+      animation-name: fadeInUp;
+      -webkit-animation-name: fadeInUp;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
     }
     &__item {
       margin: 0;
       margin-top: 10px;
       margin-bottom: 10px;
-      margin-left: 20px;
+      margin-left: 30px;
       padding: 0;
-      font-size: 19px;
+      font-size: 18px;
       line-height: 25px;
       color: #303030;
       font-weight: normal;
-      font-family: "KabelC Book", "Verdana", sans-serif;
+      font-family: "Myriad Pro", "Verdana", sans-serif;
+      font-style: italic;
       text-indent: 0px;
     }
     &__call-us {
@@ -100,4 +130,28 @@
         width: 400px;
       }
   }
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:none;
+		transform:none
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity:0;
+		-webkit-transform:translate3d(0,100%,0);
+		transform:translate3d(0,100%,0)
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:none;
+		transform:none
+	}
 }
